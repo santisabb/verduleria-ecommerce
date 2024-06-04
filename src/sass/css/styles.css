@@ -35,8 +35,25 @@
   width: 100%;
   justify-content: space-evenly;
 }
+@media screen and (max-width: 640px) {
+  .header .nav-bar .menu {
+    display: none;
+  }
+}
 .header .nav-bar .menu .menu-item a {
   text-decoration: none;
+}
+.header .nav-bar .open-menu {
+  display: none;
+}
+@media screen and (max-width: 640px) {
+  .header .nav-bar .open-menu {
+    display: block;
+  }
+  .header .nav-bar .open-menu .bi-list {
+    display: block;
+    height: 50px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

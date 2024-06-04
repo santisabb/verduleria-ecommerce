@@ -27,9 +27,23 @@
             align-items: center;
             width: 100%;
             justify-content: space-evenly;
+            @include mobile(){
+                display: none;
+            }
             .menu-item{
                 a{
                     text-decoration: none;
+                }
+            }
+        }
+        .open-menu{
+            display: none;
+            
+            @include mobile(){
+                display: block;
+                .bi-list{
+                    display: block;
+                    height: 50px;
                 }
             }
         }

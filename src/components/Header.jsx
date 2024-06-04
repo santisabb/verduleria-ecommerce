@@ -21,6 +21,9 @@ export function Header(){
                         <a href="#">opcion1</a>
                     </li>
                 </ul>
+                <div className="open-menu">
+                    <i className="bi bi-list"></i>
+                </div>
                 <div className="shop-card">
                     <i className="bi bi-cart-fill"></i>
                 </div>
