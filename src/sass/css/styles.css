@@ -4,16 +4,21 @@
 }
 
 .header {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   padding: 1rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  background-color: #000;
 }
 .header .logo {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
+}
+.header .logo .name {
+  color: white;
 }
 .header .logo .logo-img {
   border-radius: 15px;
@@ -21,39 +26,75 @@
 }
 .header .nav-bar {
   display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: space-around;
-  width: 50%;
+  align-items: center;
+  flex-direction: row;
+}
+@media screen and (max-width: 640px) {
+  .header .nav-bar {
+    visibility: hidden;
+    display: flex;
+    justify-content: unset;
+    align-items: end;
+    flex-direction: column;
+    position: absolute;
+    gap: 1rem;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 2rem;
+    background-color: rgb(72, 72, 72);
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+  }
 }
 .header .nav-bar .menu {
-  height: 100%;
   display: flex;
-  flex-direction: row;
-  list-style: none;
-  align-items: center;
-  width: 100%;
   justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  height: 100%;
+  list-style: none;
+  width: 100%;
+  gap: 1rem;
+}
+@media screen and (max-width: 900px) {
+  .header .nav-bar .menu {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
 }
 @media screen and (max-width: 640px) {
   .header .nav-bar .menu {
-    display: none;
+    justify-content: unset;
+    align-items: end;
+    gap: 1rem;
   }
 }
 .header .nav-bar .menu .menu-item a {
   text-decoration: none;
+  font-size: 1.15em;
+  color: white;
 }
-.header .nav-bar .open-menu {
+.header .open-menu, .header .nav-bar .close-menu {
   display: none;
 }
 @media screen and (max-width: 640px) {
-  .header .nav-bar .open-menu {
+  .header .open-menu, .header .nav-bar .close-menu {
     display: block;
   }
-  .header .nav-bar .open-menu .bi-list {
+  .header .open-menu .bi-list, .header .nav-bar .close-menu .bi-list {
     display: block;
-    height: 50px;
+    color: white;
+    font-size: 30px;
   }
+}
+.header .shop-card {
+  align-self: center;
+}
+.header .shop-card .bi-cart-fill {
+  font-size: 20px;
+  color: white;
 }
 
 /*# sourceMappingURL=styles.css.map */
