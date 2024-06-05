@@ -1,37 +1,75 @@
 .header{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     padding: 1rem;
+    @include flex(row, space-around,center);
+    background-color: #000;
     .logo{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+        @include flex(row, center,center);
+        .name{
+            color: white;
+        }
         .logo-img{
             border-radius: 15px;
             height: 100px;
         }
     }
     .nav-bar{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-        width: 50%;
+        .close-menu{
+            @extend .open-menu;
+        }
+        @include flex(row, space-around,center);
+        @include mobile(){
+            visibility: hidden;
+            @include flex(column, unset, end);
+            position: absolute;
+            gap: 1rem;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            padding: 2rem;
+            background-color: rgb(72, 72, 72);
+            box-shadow: 0 0 0 100vmax rgb(0, 0, 0, .5)
+        }
         .menu{
+            @include flex(row, space-evenly,center);
             height: 100%;
-            display: flex;
-            flex-direction: row;
             list-style: none;
-            align-items: center;
             width: 100%;
-            justify-content: space-evenly;
+            gap: 1rem;
+            @include tablet(){
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+            }
+            @include mobile(){
+                justify-content: unset;
+                align-items: end;
+                gap: 1rem;
+            }
             .menu-item{
                 a{
                     text-decoration: none;
+                    font-size: 1.15em;
+                    color: white;
                 }
             }
+        }
+    }
+    .open-menu{
+        display: none;
+        @include mobile(){
+            display: block;
+            .bi-list{
+                display: block;
+                color: white;
+                font-size: 30px;
+            }
+        }
+    }
+    .shop-card{
+        align-self: center;
+        .bi-cart-fill{
+            font-size: 20px;
+            color: white;
         }
     }
 }
