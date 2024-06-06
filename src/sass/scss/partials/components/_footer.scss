@@ -1,0 +1,42 @@
+.footer{
+    background-color: rgb(78, 78, 78);
+    .nav-bar-footer{
+        @include flex(column, center, center);
+        @include mobile(){
+            @include flex(row, center,start);
+            gap: 1rem;
+        }
+        ul{
+            list-style: none;
+            li{
+                a{
+                    text-decoration: none;
+                    font-size: 1.25em;
+                    @include mobile(){
+                        font-size: 1em;
+                    }
+                }
+                span{
+                    @extend a;
+                }
+            }
+        }
+        .social-media{
+            @include flex(row, center, center);
+            gap: 1rem;
+            @include mobile(){
+                @include flex(column, center, center);
+            }
+            .social{
+                @include flex(row-reverse, center, center);
+                gap: 1rem;
+            }
+        }
+        .options{
+            @extend .social-media;
+            .option{
+                @extend .social;
+            }
+        }
+    }
+}
