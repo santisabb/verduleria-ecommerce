@@ -97,4 +97,21 @@
   color: white;
 }
 
+.carousel {
+  border-top: 2px solid grey;
+}
+.carousel .carousel-item .carousel-item-text {
+  background-color: black;
+  align-self: center;
+  color: white;
+}
+.carousel .carousel-item .carousel-item-text h3 {
+  margin: 0;
+  padding: 1rem;
+  text-align: center;
+}
+.carousel .carousel-item img {
+  height: 80%;
+}
+
 /*# sourceMappingURL=styles.css.map */

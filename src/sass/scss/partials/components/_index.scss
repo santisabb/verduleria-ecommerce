@@ -1,0 +1,18 @@
+.carousel{
+    border-top: 2px solid grey;
+    .carousel-item{
+        .carousel-item-text{
+            background-color: black;
+            align-self: center;
+            color: white;
+            h3{
+                margin: 0;
+                padding: 1rem;
+                text-align: center;
+            }
+        }
+        img{
+            height: 80%;
+        }
+    }
+}
