@@ -1,0 +1,66 @@
+.carousel{
+    border-top: 2px solid grey;
+    .carousel-item{
+        .carousel-item-text{
+            background-color: black;
+            align-self: center;
+            color: white;
+            h3{
+                margin: 0;
+                padding: 1rem;
+                text-align: center;
+            }
+        }
+        img{
+            height: 80%;
+        }
+    }
+}
+.title{
+    text-align: center;
+}
+.card-container{
+    @include flex(row, space-evenly, center);
+    flex-wrap: wrap;
+    .card{
+        .image{
+            img{
+                height: 236px;
+                width: 236px;
+            }
+        }
+    }
+}
+
+.categories{
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1rem;
+    width: 50%;
+    margin: 0 auto;
+    .cat{
+        background-color: black;
+        @include flex(column, center,center);
+        height: 200px;
+        .cat-name{
+            background-color: black;
+            color: white;
+            font-size: 1.25em;
+            @include mobile(){
+                font-size: 1em;
+            }
+        }
+    }
+    .cat1{
+        @include background-img(url('https://blog.hozelock.es/wp-content/uploads/2019/01/vegetables-1212845_1280-1200x480.jpg'), no-repeat, cover, center);
+    }
+    .cat2{
+        @include background-img(url('https://www.clarin.com/2024/03/11/dwgEFaN2q_2000x1500__1.jpg'), no-repeat, cover, center);
+    }
+    .cat3{
+        @include background-img(url('https://i.pinimg.com/236x/e5/02/82/e5028210293263d09197b32539472a0c.jpg'), no-repeat, cover, center);
+    }
+    .cat4{
+        @include background-img(url('https://www.mdzol.com/u/fotografias/m/2020/5/6/f1280x720-40814_172489_5050.jpg'), no-repeat, cover, center);
+    }
+}
