@@ -7,8 +7,8 @@ export function Header(){
         <>
         <header className="header">
             <Logo></Logo>
-            <ShopCard></ShopCard>
             <NavBar></NavBar>
+            <ShopCard></ShopCard>
         </header>
         </>
     )

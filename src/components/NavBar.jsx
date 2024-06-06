@@ -10,16 +10,16 @@ function NavBar(){
         </button>
         <ul className="menu">
             <li className="menu-item">
-                <a href="#">Frutas</a>
+                <a href="#">Inicio</a>
             </li>
             <li className="menu-item">
-                <a href="#">Verduras</a>
+                <a href="#">Tienda</a>
             </li>
             <li className="menu-item">
-                <a href="#">Frutos secos</a>
+                <a href="#">Categorias</a>
             </li>
             <li className="menu-item">
-                <a href="#">Productos de almacen</a>
+                <a href="#">Registro clientes</a>
             </li>
         </ul>
     </nav>
