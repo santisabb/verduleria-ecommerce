@@ -11,7 +11,7 @@ function Card({ nombre, precio, img}){
                 <h4>{nombre}</h4>
             </div>
             <div className="add-shop-list">
-                <button>AGREGAR AL CARRITO</button>
+                <button type="button" className="btn btn-outline-primary">AGREGAR AL CARRITO 🛒</button>
             </div>
         </div>
         </>

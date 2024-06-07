@@ -1,32 +1,47 @@
 .carousel{
     border-top: 2px solid grey;
+    margin-bottom: 2rem;
     .carousel-item{
         .carousel-item-text{
             background-color: black;
             align-self: center;
             color: white;
-            h3{
+            h2{
                 margin: 0;
                 padding: 1rem;
                 text-align: center;
+                font-family: map-get($map: $google-font, $key: quicksand);
             }
         }
         img{
-            height: 80%;
+            height: 500px;
+            @include mobile(){
+                height: 400px;
+            }
         }
     }
 }
 .title{
     text-align: center;
+    font-family: map-get($map: $google-font, $key: quicksand);
 }
 .card-container{
     @include flex(row, space-evenly, center);
     flex-wrap: wrap;
+    margin-bottom: 2rem;
     .card{
         .image{
             img{
                 height: 236px;
                 width: 236px;
+            }
+        }
+        .product-info{
+            h3{
+                font-family: map-get($map: $google-font, $key: skranji);
+            }
+            h4{
+                @extend h3;
             }
         }
     }
@@ -38,6 +53,7 @@
     gap: 1rem;
     width: 50%;
     margin: 0 auto;
+    margin-bottom: 2rem;
     .cat{
         background-color: black;
         @include flex(column, center,center);
@@ -46,6 +62,7 @@
             background-color: black;
             color: white;
             font-size: 1.25em;
+            font-family: map-get($map: $google-font, $key: dancing);
             @include mobile(){
                 font-size: 1em;
             }
