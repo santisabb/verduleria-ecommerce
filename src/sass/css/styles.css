@@ -41,7 +41,9 @@
     justify-content: unset;
     align-items: end;
     flex-direction: column;
-    position: absolute;
+    animation: ease-in 1s 0.5s;
+    z-index: 2;
+    position: fixed;
     gap: 1rem;
     top: 0;
     right: 0;
@@ -80,25 +82,36 @@
   font-size: 1.15em;
   color: white;
 }
+.header .nav-bar .menu .menu-item a:hover, .header .nav-bar .menu .menu-item .footer .nav-bar-footer ul li span:hover, .footer .nav-bar-footer ul li .header .nav-bar .menu .menu-item span:hover {
+  color: green;
+}
 .header .open-menu, .header .nav-bar .close-menu {
   display: none;
 }
 @media screen and (max-width: 640px) {
   .header .open-menu, .header .nav-bar .close-menu {
     display: block;
+    border: 0;
+    background-color: transparent;
   }
   .header .open-menu .bi-list, .header .nav-bar .close-menu .bi-list {
-    display: block;
     color: white;
-    font-size: 30px;
+    font-size: 1.25em;
   }
 }
 .header .shop-card {
   align-self: center;
+  border: 0;
+  background-color: transparent;
 }
 .header .shop-card .bi-cart-fill {
-  font-size: 20px;
+  font-size: 1.5em;
   color: white;
+}
+@media screen and (max-width: 640px) {
+  .header .shop-card .bi-cart-fill {
+    font-size: 1.25em;
+  }
 }
 
 .carousel {

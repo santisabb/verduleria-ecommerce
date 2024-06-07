@@ -20,7 +20,9 @@
         @include mobile(){
             visibility: hidden;
             @include flex(column, unset, end);
-            position: absolute;
+            animation: ease-in 1s  0.5s;
+            z-index: 2;
+            position: fixed;
             gap: 1rem;
             top: 0;
             right: 0;
@@ -50,6 +52,9 @@
                     text-decoration: none;
                     font-size: 1.15em;
                     color: white;
+                    &:hover{
+                        color: green;
+                    }
                 }
             }
         }
@@ -58,17 +63,23 @@
         display: none;
         @include mobile(){
             display: block;
+            border: 0;
+            background-color: transparent;
             .bi-list{
-                display: block;
                 color: white;
-                font-size: 30px;
+                font-size: 1.25em;
             }
         }
     }
     .shop-card{
         align-self: center;
+        border: 0;
+        background-color: transparent;
         .bi-cart-fill{
-            font-size: 20px;
+            font-size: 1.5em;
+            @include mobile(){
+                font-size: 1.25em;
+            }
             color: white;
         }
     }

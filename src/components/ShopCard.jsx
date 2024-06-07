@@ -1,8 +1,8 @@
 function ShopCard(){
     return(
-        <div className="shop-card">
+        <button className="shop-card">
             <i className="bi bi-cart-fill"></i>
-        </div>
+        </button>
     )
 }
 
