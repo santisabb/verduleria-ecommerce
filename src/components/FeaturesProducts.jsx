@@ -3,7 +3,7 @@ import Card from "./ProductCard.jsx"
 function FeaturedProducts(){
     return(
         <>
-        <h2 className="title">PRODUCTOS DESTACADOS</h2>
+        <h3 className="title">PRODUCTOS DESTACADOS</h3>
         <div className="card-container">
             <Card nombre={'Naranja x1KG'} precio={'$3500'} img={'https://i.pinimg.com/236x/0b/f6/20/0bf620588aa99392749d42ad199092e0.jpg'}></Card>
             <Card nombre={'Manzana x1/2KG'} precio={'$2999'} img={'https://i.pinimg.com/236x/0b/54/11/0b5411ec8319c428da173d4438a7edbc.jpg'}></Card>
