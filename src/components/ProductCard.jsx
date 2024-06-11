@@ -9,6 +9,7 @@ function Card({ nombre, precio, img}){
             <div className="product-info">
                 <h3>{precio}</h3>
                 <h4>{nombre}</h4>
+                <a href="#">Más información</a>
             </div>
             <div className="add-shop-list">
                 <button type="button" className="btn btn-outline-primary">AGREGAR AL CARRITO 🛒</button>
