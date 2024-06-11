@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 function Footer(){
     return(
         <>
@@ -5,15 +7,15 @@ function Footer(){
             <nav className="nav-bar-footer">
                 <ul className="social-media">
                     <li className="social">
-                        <a href="https://www.instagram.com/" className="text">Instagram</a>
+                        <Link to="https://www.instagram.com/" className="text">Instagram</Link>
                         <i className="bi bi-instagram"></i>
                     </li>
                     <li className="social">
-                        <a href="https://www.facebook.com/?locale=es_LA" className="text">Facebook</a>
+                        <Link to="https://www.facebook.com/?locale=es_LA" className="text">Facebook</Link>
                         <i className="bi bi-facebook"></i>
                     </li>
                     <li className="social">
-                        <a href="https://x.com/?logout=1717649955062" className="text">X(Twitter)</a>
+                        <Link to="https://x.com/?logout=1717649955062" className="text">X(Twitter)</Link>
                         <i className="bi bi-twitter-x"></i>
                     </li>
                     <li className="social">
@@ -23,13 +25,13 @@ function Footer(){
                 </ul>
                 <ul className="options">
                     <li className="option">
-                        <a href="#">Sobre nosotros</a>
+                        <Link to="#">Sobre nosotros</Link>
                     </li>
                     <li className="option">
-                        <a href="#">Preguntas frequentes</a>
+                        <Link to="#">Preguntas frequentes</Link>
                     </li>
                     <li className="option">
-                        <a href="#">Contactanos</a>
+                        <Link to="#">Contactanos</Link>
                     </li>
                 </ul>
             </nav>
