@@ -29,6 +29,7 @@
     @include flex(row, space-evenly, center);
     flex-wrap: wrap;
     margin-bottom: 2rem;
+    gap: 1rem;
     .card{
         .image{
             img{

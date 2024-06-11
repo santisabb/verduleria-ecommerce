@@ -1,0 +1,32 @@
+.store-title{
+    text-align: center;
+}
+
+.categories-nav{
+    .nav{
+        .menu{
+            width: 100%;
+            @include flex(row, center,center);
+            gap: 1rem;
+            flex-wrap: wrap;
+            padding-left: 0;
+            .cat{
+                list-style: none;
+                font-size: 1.25em;
+                @include mobile(){
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+}
+
+.filters{
+    @include flex(row, start, center);
+    gap: 1rem;
+    padding: 1rem;
+    @include mobile(){
+        @include flex(column-reverse, center, center);
+    }
+}
+

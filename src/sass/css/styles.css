@@ -150,6 +150,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   margin-bottom: 2rem;
+  gap: 1rem;
 }
 .card-container .card .image img {
   height: 236px;
@@ -261,6 +262,46 @@
   align-items: center;
   flex-direction: row-reverse;
   gap: 1rem;
+}
+.store-title {
+  text-align: center;
+}
+
+.categories-nav .nav .menu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+.categories-nav .nav .menu .cat {
+  list-style: none;
+  font-size: 1.25em;
+}
+@media screen and (max-width: 640px) {
+  .categories-nav .nav .menu .cat {
+    font-size: 1em;
+  }
+}
+
+.filters {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: row;
+  gap: 1rem;
+  padding: 1rem;
+}
+@media screen and (max-width: 640px) {
+  .filters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
