@@ -1,5 +1,5 @@
 .footer{
-    background-color: rgb(78, 78, 78);
+    background-color: rgb(24, 99, 6);
     .nav-bar-footer{
         @include flex(column, center, center);
         @include mobile(){
@@ -12,6 +12,7 @@
                 a{
                     text-decoration: none;
                     font-size: 1.25em;
+                    color: rgb(255, 102, 0);
                     @include mobile(){
                         font-size: 1em;
                     }

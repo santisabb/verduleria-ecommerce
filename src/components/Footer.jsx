@@ -18,10 +18,6 @@ function Footer(){
                         <Link to="https://x.com/?logout=1717649955062" className="text">X(Twitter)</Link>
                         <i className="bi bi-twitter-x"></i>
                     </li>
-                    <li className="social">
-                        <span className="text">WhatsApp</span>
-                        <i className="bi bi-whatsapp"></i>
-                    </li>
                 </ul>
                 <ul className="options">
                     <li className="option">
