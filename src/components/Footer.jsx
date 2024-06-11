@@ -21,9 +21,6 @@ function Footer(){
                 </ul>
                 <ul className="options">
                     <li className="option">
-                        <Link to="#">Sobre nosotros</Link>
-                    </li>
-                    <li className="option">
                         <Link to="#">Preguntas frequentes</Link>
                     </li>
                     <li className="option">
