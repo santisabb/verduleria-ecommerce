@@ -396,4 +396,78 @@
   grid-area: bottom;
 }
 
+.contact-page {
+  background-image: url("https://i.pinimg.com/564x/92/bb/af/92bbafab53c61c7cdf4a3ae3f4355f5b.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.contact-page .page-info {
+  height: 400px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem;
+}
+.contact-page .page-info h2 {
+  background-color: rgba(0, 255, 255, 0.502);
+}
+.contact-page .page-info p {
+  font-size: 1.25em;
+}
+.contact-page .contact-options {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.26);
+}
+.contact-page .contact-options .wpp, .contact-page .contact-options .email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+@media screen and (max-width: 640px) {
+  .contact-page .contact-options .wpp, .contact-page .contact-options .email {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+  }
+}
+.contact-page .contact-options .wpp .bi, .contact-page .contact-options .email .bi {
+  font-size: 2em;
+  color: white;
+}
+@media screen and (max-width: 640px) {
+  .contact-page .contact-options .wpp .bi, .contact-page .contact-options .email .bi {
+    font-size: 1.5em;
+    padding: 1rem;
+    padding-bottom: 0;
+  }
+}
+.contact-page .contact-options .wpp h3, .contact-page .contact-options .email h3, .contact-page .contact-options .wpp .card-container .card .product-info h4, .contact-page .contact-options .email .card-container .card .product-info h4, .card-container .card .product-info .contact-page .contact-options .wpp h4, .card-container .card .product-info .contact-page .contact-options .email h4 {
+  color: white;
+}
+.contact-page .contact-options .wpp p, .contact-page .contact-options .email p {
+  font-size: 1.25em;
+  color: white;
+}
+@media screen and (max-width: 640px) {
+  .contact-page .contact-options .wpp p, .contact-page .contact-options .email p {
+    font-size: 1.15em;
+  }
+}
+@media screen and (max-width: 640px) {
+  .contact-page .contact-options .email {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */

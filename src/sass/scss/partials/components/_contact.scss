@@ -1,0 +1,53 @@
+.contact-page{
+    @include background-img(url('https://i.pinimg.com/564x/92/bb/af/92bbafab53c61c7cdf4a3ae3f4355f5b.jpg'), no-repeat, cover, center );
+    .page-info{
+        height: 400px;
+        @include flex(column, flex-end, center);
+        padding: 2rem;
+        h2{
+            background-color: rgba(0, 255, 255, 0.502);
+        }
+        p{
+            font-size: 1.25em;
+        }
+    }
+    .contact-options{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.26);
+        .wpp{
+            @include flex(column, center, center);
+            @include mobile(){
+                width: 100%;
+                @include flex(column, center, start);
+            }
+            .bi{
+                font-size: 2em;
+                color: white;
+                @include mobile(){
+                    font-size: 1.5em;
+                    padding: 1rem;
+                    padding-bottom: 0;
+                }
+            }
+            h3{
+                color: white;
+            }
+            p{
+                font-size: 1.25em;
+                color: white;
+                @include mobile(){
+                    font-size: 1.15em;
+                }
+            }
+        }
+        .email{
+            @extend .wpp;
+            @include mobile(){
+                @include flex(column, center, end);
+            }
+        }
+    }
+}
