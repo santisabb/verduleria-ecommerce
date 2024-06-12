@@ -13,12 +13,8 @@
         }
     }
     .nav-bar{
-        .close-menu{
-            @extend .open-menu;
-        }
         @include flex(row, space-around,center);
         @include mobile(){
-            visibility: hidden;
             @include flex(column, unset, end);
             animation: ease-in 1s  0.5s;
             z-index: 2;
@@ -56,6 +52,15 @@
                         color: green;
                     }
                 }
+                .login{
+                    background: transparent;
+                    color: white;
+                    border: none;
+                    font-size: 1.15em;
+                    &:hover{
+                        color: green;
+                    }
+                }
             }
         }
     }
@@ -70,6 +75,9 @@
                 font-size: 1.25em;
             }
         }
+    }
+    .close-menu{
+        @extend .open-menu;
     }
     .shop-card{
         align-self: center;
