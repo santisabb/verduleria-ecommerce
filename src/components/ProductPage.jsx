@@ -3,7 +3,7 @@ function ProductPage(){
         <>
         <section className="product-page">
             <div className="product-img">
-                <img src="https://i.pinimg.com/236x/01/54/12/015412f40501b820f34257b1590af202.jpg" alt="" />
+                <img src="https://www.clarin.com/img/2023/08/22/wE5l-hKg8_600x600__1.jpg" alt="" />
             </div>
             <div className="product-info">
                 <h3>NOMBRE PRODUCTO + x cantidad</h3>

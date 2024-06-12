@@ -5,6 +5,7 @@ import Footer from "./components/Footer.jsx"
 import Store from "./components/Store.jsx"
 import Faqs from "./components/Faqs.jsx"
 import ProductPage from "./components/ProductPage.jsx"
+import Contact from "./components/Contact.jsx"
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
         <Route path="/store" element={<Store></Store>}></Route>
         <Route path="/FAQs" element={<Faqs />}></Route>
         <Route path="/product" element={<ProductPage></ProductPage>}></Route>
+        <Route path="/contact" element={<Contact></Contact>}></Route>
       </Routes>
       <Footer></Footer>
     </BrowserRouter>

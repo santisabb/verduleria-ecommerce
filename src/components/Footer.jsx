@@ -24,7 +24,7 @@ function Footer(){
                         <Link to="/FAQs">Preguntas frequentes</Link>
                     </li>
                     <li className="option">
-                        <Link to="#">Contactanos</Link>
+                        <Link to="/contact">Contactanos</Link>
                     </li>
                 </ul>
             </nav>
