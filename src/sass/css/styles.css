@@ -305,4 +305,19 @@
   }
 }
 
+.product-page {
+  display: grid;
+  grid-template-areas: "img info" "img info" "img options";
+}
+.product-page .product-img {
+  grid-area: img;
+  margin: 0 auto;
+}
+.product-page .product-info {
+  grid-area: info;
+}
+.product-page .product-options {
+  grid-area: options;
+}
+
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,17 @@
+.product-page{
+    display: grid;
+    grid-template-areas: 
+    'img info'
+    'img info'
+    'img options';
+    .product-img{
+        grid-area: img;
+        margin: 0 auto;
+    }
+    .product-info{
+        grid-area: info;
+    }
+    .product-options{
+        grid-area: options;
+    }
+}

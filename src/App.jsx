@@ -3,6 +3,8 @@ import { Header } from "./components/Header.jsx"
 import Home from "./components/Home.jsx"
 import Footer from "./components/Footer.jsx"
 import Store from "./components/Store.jsx"
+import Faqs from "./components/Faqs.jsx"
+import ProductPage from "./components/ProductPage.jsx"
 
 function App() {
 
@@ -13,6 +15,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/store" element={<Store></Store>}></Route>
+        <Route path="/FAQs" element={<Faqs />}></Route>
+        <Route path="/product" element={<ProductPage></ProductPage>}></Route>
       </Routes>
       <Footer></Footer>
     </BrowserRouter>

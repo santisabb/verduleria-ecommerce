@@ -18,7 +18,7 @@ function NavBar(){
                 <Link to="/store">Tienda</Link>
             </li>
             <li className="menu-item">
-                <Link to="#">Preguntas frecuentes</Link>
+                <Link to="/FAQs">Preguntas frecuentes</Link>
             </li> 
             <li className="menu-item">
                 <Link to="#">Registro clientes</Link>
