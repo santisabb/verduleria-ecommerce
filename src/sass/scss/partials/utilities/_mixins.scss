@@ -14,7 +14,7 @@
     background-position: $position;
 }
 //mixin para tamaño de imagenes
-@mixin img-size-card($alto, $ancho){
+@mixin img-size($alto, $ancho){
     height: $alto;
     width: $ancho;
 }

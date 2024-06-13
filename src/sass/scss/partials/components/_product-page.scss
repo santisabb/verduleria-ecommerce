@@ -1,17 +1,47 @@
 .product-page{
     display: grid;
+    height: 100vh;
     grid-template-areas: 
     'img info'
     'img info'
     'img options';
+    @include mobile(){
+        @include flex(column, center,center);
+        height: 100%;
+    }
     .product-img{
         grid-area: img;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin: 0 auto;
+        width: 100%;
+        img{
+            @include img-size(300px, 300px);
+            @include mobile(){
+                @include img-size(200px, 200px);
+            }
+        }
     }
     .product-info{
         grid-area: info;
+        border-bottom: solid 1px rgb(168, 168, 168);
+        width: 100%;
+        margin: 0 auto;
+        h4{
+            font-size: 2em;
+        }
     }
     .product-options{
         grid-area: options;
+        @include flex(column, center, start);
+        gap: 1rem;
+        width: 100%;
+        .quantity{
+            @include flex(column, center, start);
+        }
+        .add-button{
+            padding-bottom: 2rem;
+        }
     }
 }
