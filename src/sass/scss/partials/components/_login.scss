@@ -45,12 +45,17 @@
         }
         .right-section{
             grid-area: right;
-            @include flex(column, flex-start, start);
+            height: 100%;
+            @include flex(column, flex-start, stretch);
             @include tablet(){
                 margin-top: 1rem;
                 border-top: solid 1px rgb(169, 169, 169);
             }
             .register{
+                @include flex(column, flex-start, start);
+                p{
+                    margin: 0;
+                }
                 a{
                     color: black;
                 }
@@ -61,6 +66,7 @@
         }
         .bottom{
             grid-area: bottom;
+            padding: 1rem;
         }
     }
 }

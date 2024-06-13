@@ -168,13 +168,24 @@
   margin-bottom: 2rem;
   gap: 1rem;
 }
+.card-container .card {
+  width: 245px;
+  height: 410px;
+}
 .card-container .card .image img {
   height: 236px;
-  width: 236px;
+  width: 100%;
 }
 .card-container .card .product-info h3, .card-container .card .product-info h4 {
   font-family: "Skranji";
 }
+.card-container .card .product-info .product-link {
+  text-decoration: none;
+}
+.card-container .card .add-shop-list {
+  padding: 1rem;
+}
+
 .categories {
   display: grid;
   grid-template-rows: repeat(4, 1fr);
@@ -190,6 +201,7 @@
   align-items: center;
   flex-direction: column;
   height: 200px;
+  gap: 1rem;
 }
 .categories .cat .cat-name {
   background-color: black;
@@ -443,9 +455,10 @@
 }
 .modal-container .modal-body .right-section {
   grid-area: right;
+  height: 100%;
   display: flex;
   justify-content: flex-start;
-  align-items: start;
+  align-items: stretch;
   flex-direction: column;
 }
 @media screen and (max-width: 900px) {
@@ -454,11 +467,21 @@
     border-top: solid 1px rgb(169, 169, 169);
   }
 }
+.modal-container .modal-body .right-section .register, .modal-container .modal-body .right-section .forgot-password {
+  display: flex;
+  justify-content: flex-start;
+  align-items: start;
+  flex-direction: column;
+}
+.modal-container .modal-body .right-section .register p, .modal-container .modal-body .right-section .forgot-password p {
+  margin: 0;
+}
 .modal-container .modal-body .right-section .register a, .modal-container .modal-body .right-section .forgot-password a, .modal-container .modal-body .right-section .register .footer .nav-bar-footer ul li span, .modal-container .modal-body .right-section .forgot-password .footer .nav-bar-footer ul li span, .footer .nav-bar-footer ul li .modal-container .modal-body .right-section .register span, .footer .nav-bar-footer ul li .modal-container .modal-body .right-section .forgot-password span {
   color: black;
 }
 .modal-container .modal-body .bottom {
   grid-area: bottom;
+  padding: 1rem;
 }
 
 .contact-page {
