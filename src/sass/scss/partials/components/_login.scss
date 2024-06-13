@@ -8,6 +8,7 @@
     z-index: 1;
     top: 0;
     left: 0;
+
     .modal-body{
         background-color: white;
         width: 50%;
@@ -27,6 +28,12 @@
             @include flex(row, space-between, start);
             border-bottom: solid 1px rgb(169, 169, 169);
             margin-bottom: 2rem;
+            width: 100%;
+            button{
+                background-color: transparent;
+                border: 0;
+                font-size: 1.25em;
+            }
         }
         .form{
             grid-area: left;
@@ -42,6 +49,14 @@
             @include tablet(){
                 margin-top: 1rem;
                 border-top: solid 1px rgb(169, 169, 169);
+            }
+            .register{
+                a{
+                    color: black;
+                }
+            }
+            .forgot-password{
+                @extend .register;
             }
         }
         .bottom{

@@ -409,6 +409,12 @@
   flex-direction: row;
   border-bottom: solid 1px rgb(169, 169, 169);
   margin-bottom: 2rem;
+  width: 100%;
+}
+.modal-container .modal-body .modal-top button {
+  background-color: transparent;
+  border: 0;
+  font-size: 1.25em;
 }
 .modal-container .modal-body .form {
   grid-area: left;
@@ -436,6 +442,9 @@
     margin-top: 1rem;
     border-top: solid 1px rgb(169, 169, 169);
   }
+}
+.modal-container .modal-body .right-section .register a, .modal-container .modal-body .right-section .forgot-password a, .modal-container .modal-body .right-section .register .footer .nav-bar-footer ul li span, .modal-container .modal-body .right-section .forgot-password .footer .nav-bar-footer ul li span, .footer .nav-bar-footer ul li .modal-container .modal-body .right-section .register span, .footer .nav-bar-footer ul li .modal-container .modal-body .right-section .forgot-password span {
+  color: black;
 }
 .modal-container .modal-body .bottom {
   grid-area: bottom;
