@@ -6,6 +6,9 @@
         @include flex(row, center,center);
         .name{
             color: white;
+            @include mobile(){
+                display: none;
+            }
         }
         .logo-img{
             border-radius: 15px;
@@ -80,14 +83,19 @@
         @extend .open-menu;
     }
     .shop-card{
-        align-self: center;
-        border: 0;
-        background-color: transparent;
-        .bi-cart-fill{
-            font-size: 1.5em;
-            @include mobile(){
-                font-size: 1.25em;
+        .shop-button{
+            align-self: center;
+            border: 0;
+            background-color: transparent;
+            .bi-cart-fill{
+                font-size: 1.5em;
+                @include mobile(){
+                    font-size: 1.25em;
+                }
+                color: white;
             }
+        }
+        .counter{
             color: white;
         }
     }

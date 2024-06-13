@@ -1,9 +1,10 @@
 .footer{
     background-color: rgb(24, 99, 6);
+    width: 100%;
     .nav-bar-footer{
         @include flex(column, center, center);
         @include mobile(){
-            @include flex(row, center,start);
+            @include flex(row, flex-start,start);
             gap: 1rem;
         }
         ul{
@@ -25,8 +26,10 @@
         .social-media{
             @include flex(row, center, center);
             gap: 1rem;
+            width: 100%;
+            padding-left: 0;
             @include mobile(){
-                @include flex(column, center, center);
+                @include flex(column, flex-start, center);
             }
             .social{
                 @include flex(row-reverse, center, center);

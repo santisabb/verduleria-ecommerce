@@ -24,6 +24,11 @@
 .header .logo .name {
   color: white;
 }
+@media screen and (max-width: 640px) {
+  .header .logo .name {
+    display: none;
+  }
+}
 .header .logo .logo-img {
   border-radius: 15px;
   height: 100px;
@@ -107,19 +112,22 @@
     font-size: 1.25em;
   }
 }
-.header .shop-card {
+.header .shop-card .shop-button {
   align-self: center;
   border: 0;
   background-color: transparent;
 }
-.header .shop-card .bi-cart-fill {
+.header .shop-card .shop-button .bi-cart-fill {
   font-size: 1.5em;
   color: white;
 }
 @media screen and (max-width: 640px) {
-  .header .shop-card .bi-cart-fill {
+  .header .shop-card .shop-button .bi-cart-fill {
     font-size: 1.25em;
   }
+}
+.header .shop-card .counter {
+  color: white;
 }
 
 .carousel {
@@ -221,6 +229,7 @@
 
 .footer {
   background-color: rgb(24, 99, 6);
+  width: 100%;
 }
 .footer .nav-bar-footer {
   display: flex;
@@ -231,7 +240,7 @@
 @media screen and (max-width: 640px) {
   .footer .nav-bar-footer {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: start;
     flex-direction: row;
     gap: 1rem;
@@ -256,11 +265,13 @@
   align-items: center;
   flex-direction: row;
   gap: 1rem;
+  width: 100%;
+  padding-left: 0;
 }
 @media screen and (max-width: 640px) {
   .footer .nav-bar-footer .social-media, .footer .nav-bar-footer .options {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
   }
