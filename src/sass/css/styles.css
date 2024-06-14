@@ -410,7 +410,7 @@
 .modal-container .modal-body {
   background-color: white;
   width: 50%;
-  min-width: 400px;
+  min-width: 250px;
   position: relative;
   padding: 1rem;
   display: grid;
@@ -420,7 +420,7 @@
   .modal-container .modal-body {
     display: flex;
     justify-content: flex-start;
-    align-items: start;
+    align-items: center;
     flex-direction: column;
   }
 }
@@ -483,6 +483,11 @@
 .modal-container .modal-body .bottom {
   grid-area: bottom;
   padding: 1rem;
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
 }
 
 .contact-page {
