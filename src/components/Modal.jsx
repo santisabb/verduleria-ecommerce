@@ -1,3 +1,5 @@
+import Button from "./Button.jsx"
+
 /* eslint-disable react/prop-types */
 function Modal({ isOpen, onClose, children, titleTop, className }){
     return(
@@ -6,7 +8,7 @@ function Modal({ isOpen, onClose, children, titleTop, className }){
             <div className="modal-body">
                 <div className="modal-top">
                     <h3>{titleTop}</h3>
-                    <button type="button" onClick={onClose}><i className="bi bi-x-square"></i></button>
+                    <Button  aFunction={onClose}><i className="bi bi-x-square"></i></Button>
                 </div>
                 {children}
             </div>

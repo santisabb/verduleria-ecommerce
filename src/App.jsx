@@ -1,11 +1,11 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import { Header } from "./components/Header.jsx"
-import Home from "./components/Home.jsx"
+import Home from "./pages/Home.jsx"
 import Footer from "./components/Footer.jsx"
-import Store from "./components/Store.jsx"
-import Faqs from "./components/Faqs.jsx"
-import ProductPage from "./components/ProductPage.jsx"
-import Contact from "./components/Contact.jsx"
+import Store from "./pages/Store.jsx"
+import Faqs from "./pages/Faqs.jsx"
+import ProductPage from "./pages/ProductPage.jsx"
+import Contact from "./pages/Contact.jsx"
 
 function App() {
 

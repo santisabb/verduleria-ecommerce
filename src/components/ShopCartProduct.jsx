@@ -1,5 +1,3 @@
-import Card from './ProductCard.jsx'
-
 function ShopCartProduct(){
     return(
         <>

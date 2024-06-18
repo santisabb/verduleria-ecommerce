@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import Button from "./Button.jsx"
 
 /* eslint-disable react/prop-types */
 function Card({ nombre, precio, img}){
@@ -14,7 +15,7 @@ function Card({ nombre, precio, img}){
                 <Link to="/product" className="product-link">Más información</Link>
             </div>
             <div className="add-shop-list">
-                <button type="button" className="btn btn-outline-primary">AGREGAR AL CARRITO 🛒</button>
+                <Button  style={"btn btn-outline-primary"}>AGREGAR AL CARRITO 🛒</Button>
             </div>
         </div>
         </>

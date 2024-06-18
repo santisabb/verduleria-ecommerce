@@ -3,6 +3,7 @@ import { Link } from "react-router-dom"
 import Modal from './Modal.jsx'
 import Login from "./Login.jsx"
 import { useState } from "react"
+import Button from "./Button.jsx"
 
 function NavBar({ isVisible, isHidden }){
 
@@ -25,7 +26,7 @@ function NavBar({ isVisible, isHidden }){
                 <Link to="/FAQs">Preguntas frecuentes</Link>
             </li> 
             <li className="menu-item">
-                <button type="button" className="login" onClick={ () => setModal(true) }>Registro clientes</button>
+                <Button style={"login"} aFunction={ () => setModal(true) }>Registro clientes</Button>
                 <Modal isOpen={modal} onClose={ () => setModal(false) } titleTop={'INICIAR SESION'} className={'modal-container'}>
                     <Login></Login>
                 </Modal>

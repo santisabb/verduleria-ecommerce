@@ -1,3 +1,5 @@
+import Button from "./Button.jsx"
+
 function Login(){
     return(
         <>
@@ -26,7 +28,7 @@ function Login(){
             </div>
         </div>
         <div className="bottom">
-            <button type="button" className="btn btn-primary btn-sm">Iniciar Sesion</button>
+            <Button  style={"btn btn-primary btn-sm"}>Iniciar Sesion</Button>
         </div>
         </>
     )

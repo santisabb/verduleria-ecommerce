@@ -1,6 +1,7 @@
 import NavBar from "./NavBar.jsx"
 import ShopCardButton from "./ShopCardButton.jsx"
 import Logo from "./Logo.jsx"
+import Button from './Button.jsx'
 import { useState } from "react"
 
 export function Header(){
@@ -11,9 +12,9 @@ export function Header(){
         <>
         <header className="header">
             <Logo></Logo>
-            <button className="open-menu" onClick={() => setVisible(true)}>
+            <Button style={'open-menu'} aFunction={() => setVisible(true)}>
                 <i className="bi bi-list"></i>
-            </button>
+            </Button>
             <NavBar isVisible={visible} isHidden={ () => setVisible(false) }></NavBar>
             <ShopCardButton></ShopCardButton>
         </header>
