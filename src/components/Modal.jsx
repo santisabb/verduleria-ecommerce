@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
-function Modal({ isOpen, onClose, children, titleTop }){
+function Modal({ isOpen, onClose, children, titleTop, className }){
     return(
         <>
-        <div className="modal-container" style={{ display: isOpen ? 'grid' : 'none'}}>
+        <div className={className} style={{ display: isOpen ? 'grid' : 'none'}}>
             <div className="modal-body">
                 <div className="modal-top">
                     <h3>{titleTop}</h3>

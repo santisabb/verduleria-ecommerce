@@ -26,7 +26,7 @@ function NavBar({ isVisible, isHidden }){
             </li> 
             <li className="menu-item">
                 <button type="button" className="login" onClick={ () => setModal(true) }>Registro clientes</button>
-                <Modal isOpen={modal} onClose={ () => setModal(false) } titleTop={'INICIAR SESION'}>
+                <Modal isOpen={modal} onClose={ () => setModal(false) } titleTop={'INICIAR SESION'} className={'modal-container'}>
                     <Login></Login>
                 </Modal>
             </li>

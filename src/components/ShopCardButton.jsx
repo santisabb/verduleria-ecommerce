@@ -1,4 +1,5 @@
 import Modal from "./Modal.jsx"
+import ShopCartProduct from "./ShopCartProduct.jsx"
 import { useState } from "react"
 
 function ShopCardButton(){
@@ -12,7 +13,8 @@ function ShopCardButton(){
                 <i className="bi bi-cart-fill"></i>
             </button>
             <span className="counter">0</span>
-            <Modal isOpen={modal} onClose={ () => setModal(false) } titleTop={'Carrito'}>                
+            <Modal isOpen={modal} onClose={ () => setModal(false) } titleTop={'Carrito'}>
+                <ShopCartProduct />
             </Modal>
         </div>
         </>
