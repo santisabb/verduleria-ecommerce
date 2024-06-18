@@ -1,5 +1,5 @@
 import NavBar from "./NavBar.jsx"
-import ShopCard from "./ShopCard.jsx"
+import ShopCardButton from "./ShopCardButton.jsx"
 import Logo from "./Logo.jsx"
 import { useState } from "react"
 
@@ -15,7 +15,7 @@ export function Header(){
                 <i className="bi bi-list"></i>
             </button>
             <NavBar isVisible={visible} isHidden={ () => setVisible(false) }></NavBar>
-            <ShopCard></ShopCard>
+            <ShopCardButton></ShopCardButton>
         </header>
         </>
     )

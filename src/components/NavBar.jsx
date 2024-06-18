@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import { Link } from "react-router-dom"
-import Login from "./LoginModal.jsx"
+import Modal from './Modal.jsx'
+import Login from "./Login.jsx"
 import { useState } from "react"
 
 function NavBar({ isVisible, isHidden }){
@@ -25,7 +26,9 @@ function NavBar({ isVisible, isHidden }){
             </li> 
             <li className="menu-item">
                 <button type="button" className="login" onClick={ () => setModal(true) }>Registro clientes</button>
-                <Login isOpen={modal} onClose={ () => setModal(false) }></Login>
+                <Modal isOpen={modal} onClose={ () => setModal(false) } titleTop={'INICIAR SESION'}>
+                    <Login></Login>
+                </Modal>
             </li>
         </ul>
     </nav>
