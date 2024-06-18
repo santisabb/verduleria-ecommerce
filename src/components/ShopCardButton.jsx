@@ -13,7 +13,7 @@ function ShopCardButton(){
                 <i className="bi bi-cart-fill"></i>
             </button>
             <span className="counter">0</span>
-            <Modal isOpen={modal} onClose={ () => setModal(false) } titleTop={'Carrito'}>
+            <Modal isOpen={modal} onClose={ () => setModal(false) } titleTop={'Carrito'} className={'shop-cart-container'}>
                 <ShopCartProduct />
             </Modal>
         </div>

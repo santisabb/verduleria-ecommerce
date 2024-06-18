@@ -3,10 +3,10 @@ import Card from './ProductCard.jsx'
 function ShopCartProduct(){
     return(
         <>
-        <div className="card mb-3" style={{ maxWidth: '540px' }}>
-            <div className="row g-0">
+        <div className="card mb-1" style={{ maxWidth: '340px' }}>
+            <div className="row g-6">
                 <div className="col-md-4">
-                    <img src="..." className="img-fluid rounded-start" alt="..."/>
+                    <img src="http://localhost:5173/verduleria-ecommerce/src/assets/images/fruta.jpg" className="img-fluid rounded-start" alt="..."/>
                 </div>
                 <div className="col-md-8">
                     <div className="card-body">

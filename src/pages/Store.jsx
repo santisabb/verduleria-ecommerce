@@ -1,4 +1,4 @@
-import Card from "./ProductCard.jsx" 
+import Card from "../components/ProductCard.jsx" 
 import fruta from '../assets/images/fruta.jpg'
 
 
