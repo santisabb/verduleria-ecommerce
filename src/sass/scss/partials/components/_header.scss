@@ -83,20 +83,20 @@
         @extend .open-menu;
     }
     .shop-card{
-        .shop-button{
-            align-self: center;
-            border: 0;
-            background-color: transparent;
-            .bi-cart-fill{
-                font-size: 1.5em;
-                @include mobile(){
-                    font-size: 1.25em;
-                }
-                color: white;
+        .bi-cart-fill{
+            font-size: 1.5em;
+            color: white;
+            @include mobile(){
+                font-size: 1.25em;
             }
         }
-        .counter{
+        .shop-count{
             color: white;
+            font-size: 1.25em;
+            &:hover{
+                text-decoration: solid;
+                color: white;
+            }
         }
     }
 }

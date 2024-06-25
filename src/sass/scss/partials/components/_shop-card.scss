@@ -1,0 +1,13 @@
+.shop-card{
+    @include flex(column, flex-start, center);
+    gap: 1rem;
+    width: 245px;
+    
+    height: 410px;
+    .product-image{
+        img{
+            height: 230px;
+            width: 100%;
+        }
+    }
+}
