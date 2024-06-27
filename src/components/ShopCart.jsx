@@ -15,11 +15,12 @@ function ShopCart(){
         </div>
         <div className="subtotal">
             <span>Subtotal:$13312</span>
-        </div>
-        <div className="d-grid gap-2 col-6 mx-auto">
+            <div className="d-grid gap-2 col-6 mx-auto">
             <Button style={"btn btn-primary"}>Button</Button>
             <Button style={"btn btn-primary"}>Button</Button>
         </div>
+        </div>
+        
         </>
     )
 }

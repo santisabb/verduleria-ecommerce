@@ -6,7 +6,7 @@ function ShopCardButton(){
 
     return(
         <>
-        <div className="shop-card">
+        <div className="shop-card-button">
             <Link to='/carrito'>
                 <i className="bi bi-cart-fill"></i>
             </Link>

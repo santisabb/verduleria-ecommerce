@@ -82,7 +82,11 @@
     .close-menu{
         @extend .open-menu;
     }
-    .shop-card{
+    .shop-card-button{
+        &:hover{
+            text-decoration: solid;
+            color: white;
+        }
         .bi-cart-fill{
             font-size: 1.5em;
             color: white;
@@ -93,10 +97,6 @@
         .shop-count{
             color: white;
             font-size: 1.25em;
-            &:hover{
-                text-decoration: solid;
-                color: white;
-            }
         }
     }
 }
