@@ -1,13 +1,53 @@
-.shop-card{
-    @include flex(row, center, center);
-    gap: 0.5rem;
-    width: 245px;
-
-    //height: 400px;
-    .product-image{
-        img{
-            height: 230px;
+.shop-cart{
+    gap: 1rem;
+    width: 100%;
+    @include mobile(){
+        @include flex(column, center, center);
+    }
+    display: grid;
+    grid-template-areas: 
+    'title title'
+    'p-container subtotal';
+    .page-title{
+        grid-area: title;
+    }
+    .product-container{
+        grid-area: p-container;
+        @include flex(column, center, center);
+        .shop-card{
+            @include flex(row, center, center);
+            gap: 0.5rem;
+            width: 245px;
+        
+            @include mobile(){
+                @include flex(column, center, start);
+            }
+            .product-image{
+                img{
+                    height: 230px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .subtotal{
+        grid-area: subtotal;
+        border-top-style: dashed;
+        width: 100%;
+        @include flex(column, center, start);
+        gap: 1rem;
+        padding: 1rem;
+        .final-price{
+            @include flex(row, space-evenly, start);
+            gap: 1rem;
             width: 100%;
+        }
+        .options{
+            @extend .final-price;
+            
+            .forms{
+                @include flex(column, center, start);
+            }
         }
     }
 }
