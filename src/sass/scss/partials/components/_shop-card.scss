@@ -8,19 +8,29 @@
     grid-template-areas: 
     'title title'
     'p-container subtotal';
+    margin-bottom: 2rem;
     .page-title{
         grid-area: title;
+        text-align: center;
+        font-size: 3em;
+        padding: 1rem;
     }
     .product-container{
         grid-area: p-container;
         @include flex(column, center, center);
+        gap: 1rem;
         .shop-card{
-            @include flex(row, center, center);
-            gap: 0.5rem;
-            width: 245px;
-        
-            @include mobile(){
+            @include flex(row, flex-start, center);
+            padding: 1rem;
+            width: 100%;
+            gap: 1rem;
+            @include tablet(){
                 @include flex(column, center, start);
+            }
+            .delete-button{
+                background-color: transparent;
+                border: 0;
+                font-size: 1.25em;
             }
             .product-image{
                 img{
@@ -32,13 +42,27 @@
     }
     .subtotal{
         grid-area: subtotal;
-        border-top-style: dashed;
-        width: 100%;
+        width: 400px;
+        padding: 2rem;
+        box-sizing: border-box;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        font-family: 'Courier New', monospace;
         @include flex(column, center, start);
         gap: 1rem;
-        padding: 1rem;
+        height: 450px;
+        @include mobile(){
+            width: 100%;
+        }
+        .section-title{
+            border-bottom-style: solid; 
+            width: 100%;
+        }
         .final-price{
-            @include flex(row, space-evenly, start);
+            @include flex(row, center, start);
+            @include mobile(){
+                @include flex(row, space-between, start);
+            }
             gap: 1rem;
             width: 100%;
         }
@@ -48,6 +72,9 @@
             .forms{
                 @include flex(column, center, start);
             }
+        }
+        .total{
+            @extend .final-price;
         }
     }
 }

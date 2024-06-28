@@ -1,15 +1,18 @@
+/* eslint-disable react/prop-types */
 
-function ShopCartProduct({img, name, price}){
+
+
+function ShopCartProduct({img, name, price, units}){
     return(
         <>
         <div className="shop-card">
-            <i className="bi bi-x"></i>
+            <button type="button" className="delete-button"><i className="bi bi-x"></i></button>
             <div className="product-image">
                 <img src={`${img}`} alt="imagen del producto" />
             </div>
             <div className="card-info">
-                <h3>{price}</h3>
-                <h4>{name}</h4>
+                <h3>{name}</h3>
+                <h4>{units}{price}</h4>
             </div>
         </div>
         </>
