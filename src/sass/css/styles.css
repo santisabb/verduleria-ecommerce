@@ -342,7 +342,11 @@
 .product-page {
   display: grid;
   height: 100vh;
-  grid-template-areas: "img info" "img info" "img options";
+  background-image: url("https://img.freepik.com/vector-gratis/coleccion-frutas-dibujadas-mano_23-2148942731.jpg?size=338&ext=jpg&ga=GA1.1.672697106.1719619200&semt=ais_user");
+  background-repeat: repeat;
+  background-size: 20%;
+  background-position: center;
+  grid-template-areas: "img info" "img options";
 }
 @media screen and (max-width: 640px) {
   .product-page {
@@ -351,9 +355,11 @@
     align-items: center;
     flex-direction: column;
     height: 100%;
+    background-size: 50%;
   }
 }
 .product-page .product-img {
+  background-color: rgba(0, 0, 0, 0.315);
   grid-area: img;
   display: flex;
   justify-content: center;
@@ -372,15 +378,21 @@
   }
 }
 .product-page .product-info {
+  background-color: rgba(0, 0, 0, 0.315);
+  color: white;
+  font-size: 1.25em;
   grid-area: info;
   border-bottom: solid 1px rgb(168, 168, 168);
   width: 100%;
   margin: 0 auto;
+  align-content: center;
 }
 .product-page .product-info h4 {
   font-size: 2em;
 }
 .product-page .product-options {
+  background-color: rgba(0, 0, 0, 0.315);
+  color: white;
   grid-area: options;
   display: flex;
   justify-content: center;
