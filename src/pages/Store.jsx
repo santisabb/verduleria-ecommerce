@@ -30,9 +30,9 @@ function Store(){
                     Ordenar productos
                 </button>
                 <ul className="dropdown-menu dropdown-menu-dark">
-                    <li><a className="dropdown-item active" href="#">por defecto</a></li>
-                    <li><a className="dropdown-item" href="#">por popularidad</a></li>
-                    <li><a className="dropdown-item" href="#">por mas nuevos</a></li>
+                    <li><a className="dropdown-item active" href="#">Por defecto</a></li>
+                    <li><a className="dropdown-item" href="#">Populares</a></li>
+                    <li><a className="dropdown-item" href="#">Más nuevos</a></li>
                 </ul>
             </div>
             <div className="search-section">
@@ -45,19 +45,19 @@ function Store(){
             </div>
         </section>
         <div className="card-container">
-            <Card nombre={'Nombre + x cantidad'} precio={2500} img={fruta}></Card>
-            <Card nombre={'Nombre + x cantidad'} precio={2322} img={fruta}></Card>
-            <Card nombre={'Nombre + x cantidad'} precio={323223} img={fruta}></Card>
-            <Card nombre={'Nombre + x cantidad'} precio={2332} img={fruta}></Card>
-            <Card nombre={'Nombre + x cantidad'} precio={2500} img={fruta}></Card>
-            <Card nombre={'Nombre + x cantidad'} precio={2500} img={fruta}></Card>
-            <Card nombre={'Nombre + x cantidad'} precio={2500} img={fruta}></Card>
-            <Card nombre={'Nombre + x cantidad'} precio={2500} img={fruta}></Card>
-            <Card nombre={'Nombre + x cantidad'} precio={323223} img={fruta}></Card>
-            <Card nombre={'Nombre + x cantidad'} precio={323223} img={fruta}></Card>
-            <Card nombre={'Nombre + x cantidad'} precio={323223} img={fruta}></Card>
-            <Card nombre={'Nombre + x cantidad'} precio={2322} img={fruta}></Card>
-            <Card nombre={'Nombre + x cantidad'} precio={2322} img={fruta}></Card>
+            <Card nombre={'Nombre + x cantidad'} precio={'$2500'} img={fruta}></Card>
+            <Card nombre={'Nombre + x cantidad'} precio={'$2322'} img={fruta}></Card>
+            <Card nombre={'Nombre + x cantidad'} precio={'$323223'} img={fruta}></Card>
+            <Card nombre={'Nombre + x cantidad'} precio={'$2332'} img={fruta}></Card>
+            <Card nombre={'Nombre + x cantidad'} precio={'$2500'} img={fruta}></Card>
+            <Card nombre={'Nombre + x cantidad'} precio={'$2500'} img={fruta}></Card>
+            <Card nombre={'Nombre + x cantidad'} precio={'$2500'} img={fruta}></Card>
+            <Card nombre={'Nombre + x cantidad'} precio={'$2500'} img={fruta}></Card>
+            <Card nombre={'Nombre + x cantidad'} precio={'$323223'} img={fruta}></Card>
+            <Card nombre={'Nombre + x cantidad'} precio={'$323223'} img={fruta}></Card>
+            <Card nombre={'Nombre + x cantidad'} precio={'$323223'} img={fruta}></Card>
+            <Card nombre={'Nombre + x cantidad'} precio={'$2322'} img={fruta}></Card>
+            <Card nombre={'Nombre + x cantidad'} precio={'$2322'} img={fruta}></Card>
 
         </div>
         </>

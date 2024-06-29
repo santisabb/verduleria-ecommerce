@@ -299,6 +299,7 @@
 }
 .store-title {
   text-align: center;
+  font-size: 3em;
 }
 
 .categories-nav .nav .menu {
@@ -317,7 +318,7 @@
 }
 @media screen and (max-width: 640px) {
   .categories-nav .nav .menu .cat {
-    font-size: 1em;
+    font-size: 1.2em;
   }
 }
 
