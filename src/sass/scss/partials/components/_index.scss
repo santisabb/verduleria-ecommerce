@@ -41,13 +41,14 @@
         }
         .product-info{
             h3{
-                font-family: map-get($map: $google-font, $key: skranji);
+                font-family: map-get($map: $google-font, $key: oswald);
             }
             h4{
                 @extend h3;
             }
             .product-link{
                 text-decoration: none;
+                font-family: map-get($map: $google-font, $key: oswald);
             }
         }
         .add-shop-list{
