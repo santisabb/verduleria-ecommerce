@@ -7,6 +7,8 @@ import Faqs from "./pages/Faqs.jsx"
 import ProductPage from "./pages/ProductPage.jsx"
 import Contact from "./pages/Contact.jsx"
 import ShopCart from "./components/ShopCart.jsx"
+import Register from './pages/Register.jsx'
+import Password from "./pages/Password.jsx"
 
 function App() {
 
@@ -21,6 +23,8 @@ function App() {
         <Route path="/product" element={<ProductPage></ProductPage>}></Route>
         <Route path="/contact" element={<Contact></Contact>}></Route>
         <Route path="/carrito" element={<ShopCart />}></Route>
+        <Route path="/register" element={<Register />}></Route>
+        <Route path="/recuperar-contraseña" element={<Password />}></Route>
       </Routes>
       <Footer></Footer>
     </BrowserRouter>

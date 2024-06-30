@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import Button from "./Button.jsx"
 
 function Login(){
@@ -20,11 +21,11 @@ function Login(){
         <div className="right-section">
             <div className="register">
                 <p>¿Sos nuevo?</p>
-                <a href="#">Crea tu cuenta GRATIS!</a>
+                <Link to="/register">Crea tu cuenta GRATIS!</Link>
             </div>
             <div className="forgot-password">
                 <p>¿Te olvidaste la contraseña?</p>
-                <a href="#">Recuperala acá</a>
+                <Link to="/recuperar-contraseña">Recuperala acá</Link>
             </div>
         </div>
         <div className="bottom">
