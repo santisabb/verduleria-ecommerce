@@ -113,6 +113,10 @@
     font-size: 1.25em;
   }
 }
+.header .shop-card-button {
+  background-color: transparent;
+  border: 0;
+}
 .header .shop-card-button:hover {
   text-decoration: solid;
   color: white;

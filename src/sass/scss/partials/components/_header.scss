@@ -83,6 +83,8 @@
         @extend .open-menu;
     }
     .shop-card-button{
+        background-color: transparent;
+        border: 0;
         &:hover{
             text-decoration: solid;
             color: white;

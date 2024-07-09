@@ -6,7 +6,7 @@ import Store from "./pages/Store.jsx"
 import Faqs from "./pages/Faqs.jsx"
 import ProductPage from "./pages/ProductPage.jsx"
 import Contact from "./pages/Contact.jsx"
-import ShopCart from "./components/ShopCart.jsx"
+import ShopCart from "./pages/ShopCart.jsx"
 import Register from './pages/Register.jsx'
 import Password from "./pages/Password.jsx"
 

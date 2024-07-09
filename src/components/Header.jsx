@@ -1,7 +1,7 @@
 import NavBar from "./NavBar.jsx"
-import ShopCardButton from "./ShopCardButton.jsx"
 import Logo from "./Logo.jsx"
 import Button from './Button.jsx'
+import { Link } from "react-router-dom"
 import { useState } from "react"
 
 export function Header(){
@@ -16,7 +16,12 @@ export function Header(){
                 <i className="bi bi-list"></i>
             </Button>
             <NavBar isVisible={visible} isHidden={ () => setVisible(false) }></NavBar>
-            <ShopCardButton></ShopCardButton>
+            <Button style={'shop-card-button'}>
+                <Link to='/carrito'>
+                    <i className="bi bi-cart-fill"></i>
+                </Link>
+                <span className="shop-count">0</span>
+            </Button>
         </header>
         </>
     )
