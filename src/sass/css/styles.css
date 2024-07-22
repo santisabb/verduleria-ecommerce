@@ -16,6 +16,9 @@
   flex-direction: row;
   background-color: #000;
 }
+.header a, .header .footer .nav-bar-footer ul li span, .footer .nav-bar-footer ul li .header span {
+  text-decoration: none;
+}
 .header .logo {
   display: flex;
   justify-content: center;
@@ -70,9 +73,10 @@
 }
 @media screen and (max-width: 900px) {
   .header .nav-bar .menu {
-    flex-direction: column;
+    display: flex;
     justify-content: center;
     align-items: flex-start;
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 640px) {

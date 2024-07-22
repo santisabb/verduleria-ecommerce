@@ -2,10 +2,14 @@
     padding: 1rem;
     @include flex(row, space-around,center);
     background-color: #000;
+    a{
+        text-decoration: none;
+    }
     .logo{
         @include flex(row, center,center);
+        
         .name{
-            color: white;
+            color: white;            
             @include mobile(){
                 display: none;
             }
@@ -37,9 +41,7 @@
             width: 100%;
             gap: 1rem;
             @include tablet(){
-                flex-direction: column;
-                justify-content: center;
-                align-items: flex-start;
+                @include flex(column, center,flex-start);
             }
             @include mobile(){
                 justify-content: unset;
