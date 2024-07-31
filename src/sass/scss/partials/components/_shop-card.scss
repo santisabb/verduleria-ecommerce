@@ -6,8 +6,8 @@
     }
     display: grid;
     grid-template-areas: 
-    'title title'
-    'p-container subtotal';
+    'title title title'
+    'p-container p-container subtotal';
     margin-bottom: 2rem;
     .page-title{
         grid-area: title;
@@ -19,22 +19,26 @@
         grid-area: p-container;
         @include flex(column, center, center);
         gap: 1rem;
-        .shop-card{
-            @include flex(row, flex-start, center);
+        width: 100%;
+        .card-h{
+            @include flex(row, space-evenly, center);
             padding: 1rem;
             width: 100%;
             gap: 1rem;
             @include tablet(){
                 @include flex(column, center, start);
             }
+            .product-info{
+                @include flex(row, center, center);
+            }
             .delete-button{
                 background-color: transparent;
                 border: 0;
                 font-size: 1.25em;
             }
-            .product-image{
+            .image{
                 img{
-                    height: 230px;
+                    height: 130px;
                     width: 100%;
                 }
             }
@@ -42,39 +46,45 @@
     }
     .subtotal{
         grid-area: subtotal;
-        width: 400px;
+        width: 100%;
         padding: 2rem;
-        box-sizing: border-box;
-        background-color: #f9f9f9;
-        border: 1px solid #ddd;
-        font-family: 'Courier New', monospace;
-        @include flex(column, center, start);
-        gap: 1rem;
-        height: 450px;
-        @include mobile(){
-            width: 100%;
-        }
-        .section-title{
-            border-bottom-style: solid; 
-            width: 100%;
-        }
-        .final-price{
-            @include flex(row, center, start);
-            @include mobile(){
-                @include flex(row, space-between, start);
-            }
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        .subtotal-cart{
+            width: 400px;
+            box-sizing: border-box;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            font-family: 'Courier New', monospace;
+            @include flex(column, center, end);
+            align-content: flex-end;
             gap: 1rem;
-            width: 100%;
-        }
-        .options{
-            @extend .final-price;
-            
-            .forms{
-                @include flex(column, center, start);
+            height: 450px;
+            @include mobile(){
+                width: 100%;
             }
-        }
-        .total{
-            @extend .final-price;
+            .section-title{
+                border-bottom-style: solid; 
+                width: 100%;
+            }
+            .final-price{
+                @include flex(row, center, start);
+                @include mobile(){
+                    @include flex(row, space-between, start);
+                }
+                gap: 1rem;
+                width: 100%;
+            }
+            .options{
+                @extend .final-price;
+                .forms{
+                    @include flex(column, center, start);
+                }
+            }
+            .total{
+                @extend .final-price;
+            }
         }
     }
 }

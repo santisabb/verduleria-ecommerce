@@ -1,4 +1,4 @@
-import Card from "../components/ProductCard.jsx" 
+import Card, {CardBodyVertical} from "../components/ProductCard.jsx" 
 import fruta from '../assets/images/fruta.jpg'
 
 
@@ -45,19 +45,45 @@ function Store(){
             </div>
         </section>
         <div className="card-container">
-            <Card nombre={'Nombre + x cantidad'} precio={'$2500'} img={fruta}></Card>
-            <Card nombre={'Nombre + x cantidad'} precio={'$2322'} img={fruta}></Card>
-            <Card nombre={'Nombre + x cantidad'} precio={'$323223'} img={fruta}></Card>
-            <Card nombre={'Nombre + x cantidad'} precio={'$2332'} img={fruta}></Card>
-            <Card nombre={'Nombre + x cantidad'} precio={'$2500'} img={fruta}></Card>
-            <Card nombre={'Nombre + x cantidad'} precio={'$2500'} img={fruta}></Card>
-            <Card nombre={'Nombre + x cantidad'} precio={'$2500'} img={fruta}></Card>
-            <Card nombre={'Nombre + x cantidad'} precio={'$2500'} img={fruta}></Card>
-            <Card nombre={'Nombre + x cantidad'} precio={'$323223'} img={fruta}></Card>
-            <Card nombre={'Nombre + x cantidad'} precio={'$323223'} img={fruta}></Card>
-            <Card nombre={'Nombre + x cantidad'} precio={'$323223'} img={fruta}></Card>
-            <Card nombre={'Nombre + x cantidad'} precio={'$2322'} img={fruta}></Card>
-            <Card nombre={'Nombre + x cantidad'} precio={'$2322'} img={fruta}></Card>
+            <Card img={fruta}>
+                <CardBodyVertical name={'Nombre + x cantidad'} price={'$2500'}></CardBodyVertical>
+            </Card>
+            <Card  img={fruta}>
+                <CardBodyVertical name={'name + x cantidad'} price={'$2500'}></CardBodyVertical>
+            </Card>
+            <Card  img={fruta}>
+                <CardBodyVertical name={'name + x cantidad'} price={'$2500'}></CardBodyVertical>
+            </Card>
+            <Card  img={fruta}>
+                <CardBodyVertical name={'name + x cantidad'} price={'$2500'}></CardBodyVertical>
+            </Card>
+            <Card  img={fruta}>
+                <CardBodyVertical name={'name + x cantidad'} price={'$2500'}></CardBodyVertical>
+            </Card>
+            <Card  img={fruta}>
+                <CardBodyVertical name={'name + x cantidad'} price={'$2500'}></CardBodyVertical>
+            </Card>
+            <Card  img={fruta}>
+                <CardBodyVertical name={'name + x cantidad'} price={'$2500'}></CardBodyVertical>
+            </Card>
+            <Card  img={fruta}>
+                <CardBodyVertical name={'name + x cantidad'} price={'$2500'}></CardBodyVertical>
+            </Card>
+            <Card  img={fruta}>
+                <CardBodyVertical name={'name + x cantidad'} price={'$2500'}></CardBodyVertical>
+            </Card>
+            <Card  img={fruta}>
+                <CardBodyVertical name={'name + x cantidad'} price={'$2500'}></CardBodyVertical>
+            </Card>
+            <Card  img={fruta}>
+                <CardBodyVertical name={'name + x cantidad'} price={'$2500'}></CardBodyVertical>
+            </Card>
+            <Card  img={fruta}>
+                <CardBodyVertical name={'name + x cantidad'} price={'$2500'}></CardBodyVertical>
+            </Card>
+            <Card  img={fruta}>
+                <CardBodyVertical name={'name + x cantidad'} price={'$2500'}></CardBodyVertical>
+            </Card>
 
         </div>
         </>
