@@ -9,7 +9,7 @@ function ShopCart(){
             <h2 className="page-title">Carrito de pedidos</h2>
             <div className="product-container">
                 <Card img={'https://i.pinimg.com/564x/b2/c0/e8/b2c0e8cdc61331e141f624842cdd319a.jpg'}>
-                    <CardBodyHorizontal name={'Nombre del producto'} price={'2x $1313'}></CardBodyHorizontal>
+                    <CardBodyHorizontal name={'Nombre del producto'} price={'$1313'}></CardBodyHorizontal>
                 </Card>
             </div>
             <section className="subtotal">
