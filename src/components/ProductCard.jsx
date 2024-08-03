@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import Button from "./Button.jsx"
+import { useState } from "react"
 
 /* eslint-disable react/prop-types */
 function Card({ children, img}){
@@ -42,6 +43,12 @@ export function CardBodyVertical({ name, price }){
 
 
 export function CardBodyHorizontal({ name , price }){
+    const [count, setCount] = useState(1)
+
+    const addProduct = () => setCount(count + 1)
+
+    const deleteProduct = () => setCount(count == 1 ?  1 : count - 1)
+
     return(
         <>
             <div className="product-info-h product-info">
@@ -49,9 +56,9 @@ export function CardBodyHorizontal({ name , price }){
                 <h4>{price}</h4>    
             </div>
             <div className="plus-product">
-                <Button  style={"btn btn-outline-primary btn-sm"}>+</Button>
-                <span>1</span>
-                <Button style={"btn btn-outline-primary btn-sm"}>-</Button>
+                <Button aFunction={addProduct} style={"btn btn-outline-primary btn-sm"}>+</Button>
+                <span>{count}</span>
+                <Button aFunction={deleteProduct}  style={"btn btn-outline-primary btn-sm"}>-</Button>
             </div>
             <div>
                 <Button style={'btn btn-danger'}>

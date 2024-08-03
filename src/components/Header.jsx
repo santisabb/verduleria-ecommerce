@@ -16,12 +16,10 @@ export function Header(){
                 <i className="bi bi-list"></i>
             </Button>
             <NavBar isVisible={visible} isHidden={ () => setVisible(false) }></NavBar>
-            <Button style={'shop-card-button'}>
-                <Link to='/carrito'>
-                    <i className="bi bi-cart-fill"></i>
-                </Link>
+            <Link to='/carrito' className='shop-card-button'>
+                <i className="bi bi-cart-fill"></i>
                 <span className="shop-count">0</span>
-            </Button>
+            </Link>
         </header>
         </>
     )
