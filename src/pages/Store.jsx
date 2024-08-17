@@ -1,5 +1,5 @@
 import Card, {CardBodyVertical} from "../components/ProductCard.jsx" 
-import fruta from '../assets/images/fruta.jpg'
+import products from '../mocks/products.json'
 
 
 function Store(){
@@ -45,46 +45,17 @@ function Store(){
             </div>
         </section>
         <div className="card-container">
-            <Card img={fruta}>
-                <CardBodyVertical name={'Nombre + x cantidad'} price={'$2500'}></CardBodyVertical>
-            </Card>
-            <Card  img={fruta}>
-                <CardBodyVertical name={'name + x cantidad'} price={'$2500'}></CardBodyVertical>
-            </Card>
-            <Card  img={fruta}>
-                <CardBodyVertical name={'name + x cantidad'} price={'$2500'}></CardBodyVertical>
-            </Card>
-            <Card  img={fruta}>
-                <CardBodyVertical name={'name + x cantidad'} price={'$2500'}></CardBodyVertical>
-            </Card>
-            <Card  img={fruta}>
-                <CardBodyVertical name={'name + x cantidad'} price={'$2500'}></CardBodyVertical>
-            </Card>
-            <Card  img={fruta}>
-                <CardBodyVertical name={'name + x cantidad'} price={'$2500'}></CardBodyVertical>
-            </Card>
-            <Card  img={fruta}>
-                <CardBodyVertical name={'name + x cantidad'} price={'$2500'}></CardBodyVertical>
-            </Card>
-            <Card  img={fruta}>
-                <CardBodyVertical name={'name + x cantidad'} price={'$2500'}></CardBodyVertical>
-            </Card>
-            <Card  img={fruta}>
-                <CardBodyVertical name={'name + x cantidad'} price={'$2500'}></CardBodyVertical>
-            </Card>
-            <Card  img={fruta}>
-                <CardBodyVertical name={'name + x cantidad'} price={'$2500'}></CardBodyVertical>
-            </Card>
-            <Card  img={fruta}>
-                <CardBodyVertical name={'name + x cantidad'} price={'$2500'}></CardBodyVertical>
-            </Card>
-            <Card  img={fruta}>
-                <CardBodyVertical name={'name + x cantidad'} price={'$2500'}></CardBodyVertical>
-            </Card>
-            <Card  img={fruta}>
-                <CardBodyVertical name={'name + x cantidad'} price={'$2500'}></CardBodyVertical>
-            </Card>
-
+            {
+                products.map((product) => {
+                    return(
+                        <Card key={product.id} img={product.image_url}>
+                            <CardBodyVertical name={product.product_name} price={product.price}/>
+                        </Card>
+                    )
+                    
+                })
+            }
+            
         </div>
         </>
     )

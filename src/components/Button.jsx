@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
-function Button({ style, aFunction, children }){
+function Button({ style, aFunction, isDisabled, children }){
     return(
-        <button type="button" className={style} onClick={aFunction}>
+        <button type="button" className={style} onClick={aFunction} disabled={isDisabled ? true : false}>
             {children}
         </button>
     )
