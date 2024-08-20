@@ -32,7 +32,7 @@
     gap: 1rem;
     .card{
         width: 245px;
-        height: 410px;
+        height: 450px;
         .image{
             img{
                 height: 236px;
@@ -45,6 +45,7 @@
             }
             h4{
                 @extend h3;
+                font-size: 2rem;
             }
             .product-link{
                 text-decoration: none;
@@ -53,6 +54,7 @@
         }
         .add-shop-list{
             padding: 1rem;
+            align-items: end;
         }
     }
 }

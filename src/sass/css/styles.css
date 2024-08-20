@@ -179,7 +179,7 @@
 }
 .card-container .card {
   width: 245px;
-  height: 410px;
+  height: 450px;
 }
 .card-container .card .image img {
   height: 236px;
@@ -188,12 +188,16 @@
 .card-container .card .product-info h3, .card-container .card .product-info h4 {
   font-family: "Oswald";
 }
+.card-container .card .product-info h4 {
+  font-size: 2rem;
+}
 .card-container .card .product-info .product-link {
   text-decoration: none;
   font-family: "Oswald";
 }
 .card-container .card .add-shop-list {
   padding: 1rem;
+  align-items: end;
 }
 
 .categories {
