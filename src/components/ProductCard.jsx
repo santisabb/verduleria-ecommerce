@@ -3,30 +3,51 @@ import Button from "./Button.jsx"
 import { useState } from "react"
 
 /* eslint-disable react/prop-types */
-function Card({ children, img}){
+function Card({ products }){
     return(
-        <>
-        <div className="card card-h">
-            <div className="image">
-                <img src={`${img}`} alt="imagen del producto" />
+    <div className="card-container">
+        {products.map(product => (
+            <div key={product.id} className="card card-h">
+                <div className="image">
+                    <img src={product.image_url} alt={product.product_name} />
+                </div>
+                <div className="product-info-v product-info">
+                    <h3>{product.product_name}</h3>
+                    <h4>{product.price}</h4>
+                    <Link to="/product" className="product-link">Más información</Link>
+                </div>
+                <div className="add-shop-list">
+                    <button disabled={product.stock == 0 ? true : false} type="button" className="btn btn-outline-primary">
+                        AGREGAR A CARRITO 🛒
+                    </button>
+                </div>
+                <span style={product.stock == 0 ? {display:'block', color:'red'} : {display:'none'}}>
+                    PRODUCTO NO DISPONIBLE
+                </span>
             </div>
-            {children}
-        </div>
-        </>
+        )
+    )}
+    </div>
     )
 }
 
-export function CardBodyVertical({ name, price }){
+export function CardBodyVertical({ products, children }){
     return(
         <>
+        {
+        products.map((product) => {
+            <>
             <div className="product-info-v product-info">
-                <h3>{name}</h3>
-                <h4>{price}</h4>
+                <h3>{product.product_name}</h3>
+                <h4>{product.price}</h4>
                 <Link to="/product" className="product-link">Más información</Link>
             </div>
             <div className="add-shop-list">
-                <Button  style={"btn btn-outline-primary"}>AGREGAR AL CARRITO 🛒</Button>
+                {children}
             </div>
+        </>
+        }
+        )}
         </>
     )
 }
