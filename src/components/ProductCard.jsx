@@ -1,12 +1,16 @@
+/* eslint-disable react/prop-types */
 import { Link } from "react-router-dom"
 import Button from "./Button.jsx"
 import { useState } from "react"
 
-/* eslint-disable react/prop-types */
 function Card({ products }){
+    if(!Array.isArray(products)){
+        return <h3>No hay productos</h3>
+    }
     return(
     <div className="card-container">
-        {products.map(product => (
+        {
+        products.map(product => (
             <div key={product.id} className="card card-h">
                 <div className="image">
                     <img src={product.image_url} alt={product.product_name} />
@@ -25,8 +29,7 @@ function Card({ products }){
                     PRODUCTO NO DISPONIBLE
                 </span>
             </div>
-        )
-    )}
+        ))}
     </div>
     )
 }

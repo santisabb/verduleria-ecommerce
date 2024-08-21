@@ -1,33 +1,54 @@
-.store-title{
-    text-align: center;
-    font-size: 3em;
-}
+.store-page{
+    background-color: rgb(30, 41, 25);
 
-.categories-nav{
-    .nav{
-        .menu{
-            width: 100%;
-            @include flex(row, center,center);
+    .store-title{
+        text-align: center;
+        font-size: 3em;
+        color: white;
+    }
+
+
+    .header-store{
+        gap: 1rem;
+        @include flex(row, space-evenly, center);
+        @include mobile(){
+            @include flex(column, center, start);
+        }
+        .filters{
+            @include flex(row, start, center);
             gap: 1rem;
-            flex-wrap: wrap;
-            padding-left: 0;
-            .cat{
-                list-style: none;
-                font-size: 1.25em;
+            padding: 1rem;
+            @include mobile(){
+                @include flex(column-reverse, center, center);
+            }
+            .dropdown{
+                @include flex(column,center,start);
                 @include mobile(){
-                    font-size: 1.20em;
+                    @include flex(row, center, start);
                 }
+                .filter-name{
+                    color: white;
+                    font-size: 1.25em;
+                }
+            }
+            
+            .price-filter{
+                color: white;
+                font-size: 1.25em;
+            }
+        }
+        .search-section{
+            @include mobile(){
+                margin-bottom: 1rem;
             }
         }
     }
-}
-
-.filters{
-    @include flex(row, start, center);
-    gap: 1rem;
-    padding: 1rem;
-    @include mobile(){
-        @include flex(column-reverse, center, center);
+    
+    .card{
+        background-color: rgb(26, 24, 24);
+        color: white;
     }
+    
+    
 }
 

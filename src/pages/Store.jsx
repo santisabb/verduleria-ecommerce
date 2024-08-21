@@ -1,7 +1,6 @@
 import HeaderStore from "../components/HeaderStore.jsx"
 import Card from "../components/ProductCard.jsx" 
-import Filters from "../components/Filters.jsx"
-import { products as initialProducts }  from '../mocks/products.json'
+import {products as initialProducts}  from '../mocks/products.json'
 import { useState } from "react"
 
 
@@ -31,14 +30,13 @@ function Store(){
 
 
     return(
-        <main>
-            {/*TODO:
-            ❌diseñar un header que incluya dos dropdowns para elegir categorias y otra para ordenar los productos
-            ✅sino hacer un solo dropdown para elegir la categoria y una barra de rango para elegir un precio
-            ✅siempre incluyendo una barra de busqueda */}
+        <main className="store-page">
+            <h2 className="store-title">Tienda</h2>
+
             <HeaderStore></HeaderStore>
-            {/* ✅ - en vez de hacer map aquí, hacerlo directamente en el componente (?) */}
-            <Card products={initialProducts} />
+
+            
+            <Card products={products} />
         </main>
     )
 }

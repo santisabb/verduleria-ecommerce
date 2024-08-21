@@ -11,19 +11,19 @@ export default function Filters() {
   return (
     <section className="filters">
       <div className="dropdown">
-          <button className="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <label className="filter-name" htmlFor="category">
             Tipo de productos
-          </button>
-          <ul className="dropdown-menu dropdown-menu-dark">
-              <li value={'fruit'} className="dropdown-item">Frutas</li>
-              <li value={'vegetable'} className="dropdown-item">Verduras</li>
-              <li value={'hortaliza'} className="dropdown-item">Hortalizas</li>
-              <li value={'grocery'} className="dropdown-item">Almacen</li>
-          </ul>
+          </label>
+          <select id="category">
+              <option value={'fruit'} className="dropdown-item">Frutas</option>
+              <option value={'vegetable'} className="dropdown-item">Verduras</option>
+              <option value={'hortaliza'} className="dropdown-item">Hortalizas</option>
+              <option value={'grocery'} className="dropdown-item">Almacen</option>
+          </select>
       </div>
 
       <div>
-        <label htmlFor="price" className="form-label">Precio: ${minPrice}</label>
+        <label htmlFor="price" className="price-filter">Precio: ${minPrice}</label>
         <input 
         type="range" 
         className="form-range" 
