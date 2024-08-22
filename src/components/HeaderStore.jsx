@@ -1,9 +1,9 @@
 import Filters from "./Filters.jsx"
 import SearchBar from "./SearchBar.jsx"
-export default function HeaderStore() {
+export default function HeaderStore({ changeFilters }) {
   return (
     <header className="header-store">
-        <Filters />
+        <Filters onChange={changeFilters} />
         <SearchBar />
     </header>
   )

@@ -9,22 +9,22 @@ function Store(){
     const [products] = useState(initialProducts)
 
     const [filters, setFilters] = useState({
-        category: "all",
+        category: 'all',
         minPrice: 0
     })
 
     const filterProducts = (products) => {
         return products.filter(product => {
-            return (
-                product.price >= filters.minPrice && (
-                    filters.category === "all" || 
-                    product.category === filters.category 
+            return(
+                product.price >= filters.minPrice &&(
+                    filters.category === "all" ||
+                    product.category === filters.category
                 )
             )
         })
     }
 
-    const filteredProducts = filterProducts(products)
+    const filteredProducts  = filterProducts(products)
 
     
 
@@ -33,10 +33,10 @@ function Store(){
         <main className="store-page">
             <h2 className="store-title">Tienda</h2>
 
-            <HeaderStore></HeaderStore>
+            <HeaderStore changeFilters={setFilters}></HeaderStore>
 
             
-            <Card products={products} />
+            <Card products={filteredProducts} />
         </main>
     )
 }

@@ -17,7 +17,7 @@ function Card({ products }){
                 </div>
                 <div className="product-info-v product-info">
                     <h3>{product.product_name}</h3>
-                    <h4>{product.price}</h4>
+                    <h4>{`$${product.price}`}</h4>
                     <Link to="/product" className="product-link">Más información</Link>
                 </div>
                 <div className="add-shop-list">
